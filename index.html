@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bg-color':'rgba(23, 152, 0, 1)',
+              }
+            }
+          }
+        }
+      </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +28,37 @@
             font-family: "Sora", serif;
         }
     </style>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/8a8d66bd9e.js" crossorigin="anonymous"></script>
 
     <title>Nature's Platter</title>
 </head>
 <body class="sora">
     <header>
+       <div class="flex justify-between items-center border border-bg-color px-4 py-3 lg:hidden">
+            <div><img src="./c2-assets/logo-header.png" alt=""></div>
+            <div><i class="fa-solid fa-bars text-bg-color"></i></div>
+       </div> 
 
+
+       <div class="md:container mx-auto p-5 hidden lg:block">
+            <div class="flex items-center justify-between">
+                <div><img src="./c2-assets/logo-header.png" alt=""></div>
+                <div>
+                    <ul class="flex gap-8 text-xl">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="space-x-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="text-xl border border-bg-color rounded-xl px-7 py-2 hover:bg-bg-color hover:text-white">Log In</button>
+                    <button class="text-xl bg-bg-color rounded-xl px-7 py-2 text-white hover:bg-transparent hover:border border-bg-color hover:text-[#111111]">Register</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         
