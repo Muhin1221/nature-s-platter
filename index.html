@@ -34,14 +34,15 @@
     <title>Nature's Platter</title>
 </head>
 <body class="sora">
-    <header>
-       <div class="flex justify-between items-center border border-bg-color px-4 py-3 lg:hidden">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] space-y-10">
+          <!-- Nav bar-->
+       <nav class="flex justify-between items-center border border-bg-color px-4 py-3 lg:hidden">
             <div><img src="./c2-assets/logo-header.png" alt=""></div>
             <div><i class="fa-solid fa-bars text-bg-color"></i></div>
-       </div> 
+       </nav> 
 
 
-       <div class="md:container mx-auto p-5 hidden lg:block">
+       <nav class="md:container mx-auto p-2 hidden lg:block">
             <div class="flex items-center justify-between">
                 <div><img src="./c2-assets/logo-header.png" alt=""></div>
                 <div>
@@ -57,6 +58,19 @@
                     <button class="text-xl border border-bg-color rounded-xl px-7 py-2 hover:bg-bg-color hover:text-white">Log In</button>
                     <button class="text-xl bg-bg-color rounded-xl px-7 py-2 text-white hover:bg-transparent hover:border border-bg-color hover:text-[#111111]">Register</button>
                 </div>
+            </div>
+        </nav>
+
+            <!-- Banner -->
+        <div class="flex flex-col justify-center items-center gap-3">
+            <div class="px-5 space-y-3 lg:w-[830px]">
+                <!-- In the h2 below the span part is animated -->
+                <h2 class="text-3xl font-semibold text-center">Freshness <span class="text-bg-color animate-pulse">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h2>
+                <p class="text-gray-500 text-lg text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div>
+                <img class="w-full" src="./c2-assets/hero-vegetables.png" alt="">
             </div>
         </div>
     </header>
